@@ -5,11 +5,13 @@ class LinearRegression:
     def __init__(self, lr = 0.001, num_iters = 1000):
         self.lr = lr
         self.num_iters = num_iters
+        self.weights = None
+        self.bias = None
 
     def fit(self, X, y):
         n_samples, n_features = X.shape
-        self.weights = None
-        self.bias = None
+        self.weights = np.zeros(n_features)
+        self.bias = 0
 
         for i in range(self.num_iters):
             y_pred = np.dot(X, self.weights) + self.bias
