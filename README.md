@@ -1,2 +1,2 @@
-# ML-Algorithms-Implementation
-This repository comprises of machine learning algorithms coded from scratch
+# ML Algorithm Implementation
+This repository comprises machine learning algorithms coded from scratch
